@@ -1,0 +1,79 @@
+/* Main Background Styles */
+
+//UV Index Colours
+
+// Index 0-2
+$index02: (linear-gradient(rgba(164,179,87,1) 36%, rgba(155,173,77,1) 45%, rgba(97,138,19,1) 100%));
+
+// index 3-5
+$index35: (linear-gradient(rgba(224,215,159,1) 0%, rgba(207,187,2,1) 50%, rgb(182, 149, 3) 100%));
+
+// index 6-7
+$index67: (linear-gradient(rgba(255,175,75,1) 0%, rgba(207,98,2,1) 100%));
+
+// index 8-10
+$index810: (linear-gradient(rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(230,56,32,1) 61%, rgba(224,26,0,1) 94%, rgba(231,56,39,1) 100%));
+
+// index 11+
+$index11: (linear-gradient(rgba(196,49,74,1) 0%, rgba(132,45,166,1) 100%));
+
+.low {
+    background: $index02;
+}
+
+.low-border {
+    border: 5px solid rgba(97,138,19,1);
+}
+
+.low-background {
+    background: rgba(97,138,19,1);
+}
+
+.moderate {
+    background: $index35;
+}
+
+.moderate-border {
+    border: 5px solid rgb(182, 149, 3);
+}
+
+.moderate-background {
+    background: rgb(182, 149, 3);
+}
+
+.high {
+    background: $index67;
+}
+
+.high-border {
+    border: 5px solid rgba(207,98,2,1);
+}
+
+.high-background {
+    background: rgba(207,98,2,1);
+}
+
+.very-high {
+    background: $index810;
+}
+
+.very-high-border {
+    border: 5px solid rgba(231,56,39,1);
+}
+
+.very-high-background {
+    background: rgba(231,56,39,1);
+}
+
+.extreme {
+    background: $index11;
+}
+
+.extreme-border {
+    border: 5px solid rgba(132,45,166,1);
+}
+
+.extreme-background {
+    background: rgba(132,45,166,1);
+}
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProtectMe</title>
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <section class="main-info">
+            <div class="inner-wrapper">
+                <section class="top-section">
+                    <h1>ProtectMe</h1>
+                    
+                </section>
+                <div class="main-carousel">
+                    <div class="carousel-cell first-panel" id="panel-1">
+                        <div class="first-flex">
+                            <div class="main-uv-index">
+                                <p><span class="UV-index"></span>UV Index</p>
+                            </div>
+                            <div class="main-weather-info">
+                                <p><span class="location"></span></p>
+                                <p><span class="temp-in-c"></span> ℃ Current Temperature</p>
+                                <p><span class="weather-condition"> Current Weather Condition</span></p>
+                                <p><span class="wind-chill"></span> Wind Chill</p>
+                                <p><span class="feels-like"></span> ℃ Feels Like</p>
+
+                                <a class="twitter-share-button" target="_blank" data-size="large"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet the Weather</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-cell second-cell" id="panel-2">
+                        <div class="user-form">
+                            <form action="" class="hello">
+                                <h3>Search Other Locations</h3>
+                                <label for="province">Province/Country</label>
+                                <input type="text" name="province" id="province" required="true">
+
+                                <label for="city">Major City</label>
+                                <input type="text" name="city" id="city" required="true">
+                                <input type="submit" id="index-button">
+                            </form>
+                        </div>
+                        <!-- User Inputted Data -->
+                        <div class="right-info-panel">
+                            <div class="user-uv-indexes">
+                                <p><span class="user-UV-index"></span>UV Index</p>
+                            </div>
+                            <div class="user-weather-area">
+                                <p><span class="user-location"></span></p>
+                                <p><span class="user-temp-in-c"></span>  Temperature</p>
+                                <p><span class="user-weather-condition"></span>  Weather Condition</p>
+                                <p><span class="user-wind-chill"></span> Wind Chill</p>
+                                <p><span class="user-feels-like"></span> Feels Like</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="colour-index">
+                <li>
+                    <p>
+                        <span>
+                            <i class="fa fa-circle low-uv" aria-hidden="true">
+                                <span class="sr-only">green colour</span>
+                            </i>
+                        </span> - Low (0-2 UV)</p>
+                </li>
+                <li>
+                    <p>
+                        <span>
+                            <i class="fa fa-circle moderate-uv" aria-hidden="true">
+                                <span class="sr-only">yellow colour</span>
+                            </i>
+                        </span> - Moderate (3-5 UV)</p>
+                </li>
+                <li>
+                    <p>
+                        <span>
+                            <i class="fa fa-circle high-uv" aria-hidden="true">
+                                <span class="sr-only">orange colour</span>
+                            </i>
+                        </span> - High (6-7 UV)</p>
+                </li>
+                <li>
+                    <p>
+                        <span>
+                            <i class="fa fa-circle very-high-uv" aria-hidden="true">
+                                <span class="sr-only">red colour</span>
+                            </i>
+                        </span> - Very HIgh (8-10 UV)</p>
+                </li>
+                <li>
+                    <p>
+                        <span>
+                            <i class="fa fa-circle extreme-uv" aria-hidden="true">
+                                <span class="sr-only">purple colour</span>
+                            </i>
+                        </span> - Extreme (11+ UV)</p>
+                </li>
+            </ul>
+        </section>
+        <!-- UV Radiation Information Section -->
+        <section class="second-half">
+            <div class="inner-wrapper">
+                <!-- Protect Me Index? -->
+                <div class="flex-container">
+                    <div class="protect-me-index color-align">
+                        <h2 class="header-background">ProtectMe Index</h2>
+                        <div class="aside-container" id="index1">
+
+                            <div class="main-indicators">
+                                <p>Sunscreen:</p>
+                                <p>Hat:</p>
+                                <p>Sunglasses:</p>
+                                <p>Shade:</p>
+                                <p>Water:</p>
+                            </div>
+                            <div class="main-indivators" id="icons">
+                                <p class="sunscreen"></p>
+                                <p class="hat"></p>
+                                <p class="sunglasses"></p>
+                                <p class="shade"></p>
+                                <p class="hydrate"></p>
+                            </div>
+                        </div>
+                                <div class="uv-facts">
+                                    <h2>Sun Protection Facts</h2>
+                                    <p class="cool-facts">
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+
+
+                    <!-- Did you reapply today? -->
+                    <div class="journal color-align">
+                        <form class="myForm">
+                            <h2 class="header-background">RecordMe</h2>
+                            <div class="aside-container">
+                                <fieldset class="sunscreen-info">
+                                    <div class="inner-field">
+                                        <p>Reapply Sunscreen</p>
+                                    </div>
+                                    <div class="inner-field">
+                                        <label for="sunscreen-amount">0</label>
+                                        <input type="radio" name="sunscreen-amount" id="sunscreen-0" value="0" checked="true">
+                                        <label for="sunscreen-amount">1</label>
+                                        <input type="radio" name="sunscreen-amount" id="sunscreen-1" value="1">
+                                        <label for="sunscreen-amount">2</label>
+                                        <input type="radio" name="sunscreen-amount" id="sunscreen-2" value="2">
+                                        <label for="sunscreen-amount">3</label>
+                                        <input type="radio" name="sunscreen-amount" id="sunscreen-3" value="3">
+                                        <label for="sunscreen-amount">4</label>
+                                        <input type="radio" name="sunscreen-amount" id="sunscreen-4" value="4">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="hat-info">
+                                    <div class="inner-field">
+                                        <p>Hat Protection</p>
+                                    </div>
+                                    <div class="inner-field">
+                                        <label for="hat-amount">0</label>
+                                        <input type="radio" name="hat-amount" id="hat-0" value="0" checked="true">
+                                        <label for="sunscreen-amount">1</label>
+                                        <input type="radio" name="hat-amount" id="hat-1" value="1">
+                                        <label for="sunscreen-amount">2</label>
+                                        <input type="radio" name="hat-amount" id="hat-2" value="2">
+                                        <label for="sunscreen-amount">3</label>
+                                        <input type="radio" name="hat-amount" id="hat-3" value="3">
+                                        <label for="sunscreen-amount">4</label>
+                                        <input type="radio" name="hat-amount" id="hat-4" value="4">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="eye-info">
+                                    <div class="inner-field">
+                                        <p>Eye Protection</p>
+                                    </div>
+                                    <div class="inner-field">
+                                        <label for="eye-amount">0</label>
+                                        <input type="radio" name="eye-amount" id="eye-0" value="0" checked="true">
+                                        <label for="sunscreen-amount">1</label>
+                                        <input type="radio" name="eye-amount" id="eye-1" value="1">
+                                        <label for="sunscreen-amount">2</label>
+                                        <input type="radio" name="eye-amount" id="eye-2" value="2">
+                                        <label for="sunscreen-amount">3</label>
+                                        <input type="radio" name="eye-amount" id="eye-3" value="3">
+                                        <label for="sunscreen-amount">4</label>
+                                        <input type="radio" name="eye-amount" id="eye-4" value="4">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="hydate-info">
+                                    <div class="inner-field">
+                                        <p>Hydration Level</p>
+                                    </div>
+                                    <div class="inner-field">
+                                        <label for="Hydration-amount">0</label>
+                                        <input type="radio" name="Hydration-amount" id="water-0" value="0" checked="true">
+                                        <label for="sunscreen-amount">1</label>
+                                        <input type="radio" name="Hydration-amount" id="water-1" value="1">
+                                        <label for="sunscreen-amount">2</label>
+                                        <input type="radio" name="Hydration-amount" id="water-2" value="2">
+                                        <label for="sunscreen-amount">3</label>
+                                        <input type="radio" name="Hydration-amount" id="water-3" value="3">
+                                        <label for="sunscreen-amount">4</label>
+                                        <input type="radio" name="Hydration-amount" id="water-14" value="4">
+                                        <input type="submit">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-section">
+            <div class="inner-wrapper">
+                <div class="journal-info color-align">
+                    <h2 class="header-background">Daily Log</h2>
+                    <div class="aside-container">
+                        <details class="user-info">
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    
+    <!-- JQuery -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="javascript/moment.js"></script>
+    <script src="javascript/script.js"></script>
+
+    <!-- Font-Awesome -->
+    <script src="https://use.fontawesome.com/3259d81f6e.js"></script>
+    
+    <!-- Flickity -->
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+.main-carousel {
+    margin-bottom: 1%;
+}
+
+.flickity-viewport {
+    height: 400px;
+}
+
+.flickity-page-dots {
+    bottom: 20px;
+}
+
+
+.flickity-prev-next-button {
+    display: none;
+}
+
+.first-flex {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.main-uv-index {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.main-uv-index, .main-weather-info {
+    padding: 5%;
+}
+
+.main-weather-info {
+    align-self: center;
+    p {
+        margin: 5px 0;
+    }
+}
+
+.location {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+// second panel
+
+#panel-2 {
+    display: flex;
+    border: 1px solid black;
+}
+
+.user-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 2;
+    width: 25%;
+}
+
+.user-uv-indexes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-weather-area {
+    align-self: center;
+    flex-grow: 2;
+    p {
+        margin: 5px 0;
+    }
+}
+
+.user-location {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.user-form, .user-weather-area, .user-uv-indexes {
+    padding: 1%;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello input {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+}
+
+
+.user-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.right-info-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.user-uv-indexes, .user-weather-area {
+    width: 50%;
+}
+
+.carousel-cell {
+    height: 100%;
+}
+
+// colour index
+
+.colour-index {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 5px;
+    }
+}
+
+.low-uv {
+    color: rgba(97,138,19,1);
+}
+
+.moderate-uv {
+    color: rgb(182, 149, 3);
+}
+
+.high-uv {
+    color: rgba(207,98,2,1);
+}
+
+.very-high-uv {
+    color: rgba(231,56,39,1);
+}
+
+.extreme-uv {
+    color: rgba(132,45,166,1);
+}

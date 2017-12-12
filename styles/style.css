@@ -1,0 +1,856 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 300px;
+  /* height of carousel */
+  margin-right: 10px;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.main-carousel {
+  margin-bottom: 1%;
+}
+
+.flickity-viewport {
+  height: 400px;
+}
+
+.flickity-page-dots {
+  bottom: 20px;
+}
+
+.flickity-prev-next-button {
+  display: none;
+}
+
+.first-flex {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.main-uv-index {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.main-uv-index, .main-weather-info {
+  padding: 5%;
+}
+
+.main-weather-info {
+  align-self: center;
+}
+
+.main-weather-info p {
+  margin: 5px 0;
+}
+
+.location {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#panel-2 {
+  display: flex;
+  border: 1px solid black;
+}
+
+.user-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 2;
+  width: 25%;
+}
+
+.user-uv-indexes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-weather-area {
+  align-self: center;
+  flex-grow: 2;
+}
+
+.user-weather-area p {
+  margin: 5px 0;
+}
+
+.user-location {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.user-form, .user-weather-area, .user-uv-indexes {
+  padding: 1%;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello input {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+  height: 30px;
+}
+
+.user-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-info-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.user-uv-indexes, .user-weather-area {
+  width: 50%;
+}
+
+.carousel-cell {
+  height: 100%;
+}
+
+.colour-index {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.colour-index li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.low-uv {
+  color: #618a13;
+}
+
+.moderate-uv {
+  color: #b69503;
+}
+
+.high-uv {
+  color: #cf6202;
+}
+
+.very-high-uv {
+  color: #e73827;
+}
+
+.extreme-uv {
+  color: #842da6;
+}
+
+.second-half .inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 1;
+}
+
+.flex-container {
+  width: 48%;
+}
+
+.flex-container:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journal-info {
+  position: relative;
+}
+
+.user-info {
+  position: relative;
+}
+
+form, fieldset {
+  border: none;
+}
+
+.color-align {
+  border: 3px solid purple;
+  border-radius: 5px;
+}
+
+.aside-container {
+  padding: 3%;
+  background: white;
+}
+
+#index1 {
+  display: flex;
+  /*     flex-direction: column; */
+  justify-content: space-between;
+}
+
+#index1 .main-indicators p {
+  margin: 1%;
+}
+
+/* .index2 {
+    display: flex;
+    justify-content: space-between;
+} */
+input[type=submit] {
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input[type=submit]:active {
+  color: black;
+  background: white;
+  border: 4px solid black;
+  font-weight: bold;
+}
+
+.aside-container::nth-child(2) p {
+  text-align: center;
+}
+
+.main-indicators:first-child {
+  width: 30%;
+}
+
+#icons {
+  width: 70%;
+}
+
+#index1 .main-indicators p {
+  margin: 4%;
+  text-align: left;
+  margin: 3px 0;
+}
+
+.protect-me-index {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.protect-me-index p {
+  text-align: left;
+}
+
+input[type=radio] {
+  margin: 15px;
+  text-align: center;
+}
+
+label[for=sunscreen-amount] {
+  text-align: center;
+}
+
+.user-info {
+  font-size: 2rem;
+  padding: 1%;
+}
+
+.inner-field {
+  text-align: center;
+}
+
+.inner-field p {
+  display: block;
+  border-bottom: 1px solid grey;
+}
+
+.cool-facts {
+  padding: 2%;
+  background: white;
+}
+
+details {
+  display: flex;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.last-section {
+  margin-top: 3%;
+}
+
+details {
+  text-align: left;
+  border-radius: 5px;
+}
+
+summary {
+  border-radius: 5px;
+  text-align: left;
+  padding: 5px;
+  color: white;
+  margin-left: 20px;
+}
+
+summary p {
+  color: white;
+}
+
+label {
+  font-size: 2rem;
+  font-size: bold;
+}
+
+.sun-level, .hat-level, .eye-level, .water-level {
+  color: black;
+  line-height: 1.5;
+  padding-left: 15px;
+  display: block;
+  background: white;
+}
+
+.logged-info {
+  color: red;
+  margin-left: 10px;
+}
+
+.uv-facts {
+  display: block;
+}
+
+.index2 {
+  display: flex;
+}
+
+/* Main Background Styles */
+.low {
+  background: linear-gradient(#a4b357 36%, #9bad4d 45%, #618a13 100%);
+}
+
+.low-border {
+  border: 5px solid #618a13;
+}
+
+.low-background {
+  background: #618a13;
+}
+
+.moderate {
+  background: linear-gradient(#e0d79f 0%, #cfbb02 50%, #b69503 100%);
+}
+
+.moderate-border {
+  border: 5px solid #b69503;
+}
+
+.moderate-background {
+  background: #b69503;
+}
+
+.high {
+  background: linear-gradient(#ffaf4b 0%, #cf6202 100%);
+}
+
+.high-border {
+  border: 5px solid #cf6202;
+}
+
+.high-background {
+  background: #cf6202;
+}
+
+.very-high {
+  background: linear-gradient(#f85032 0%, #f16f5c 0%, #e63820 61%, #e01a00 94%, #e73827 100%);
+}
+
+.very-high-border {
+  border: 5px solid #e73827;
+}
+
+.very-high-background {
+  background: #e73827;
+}
+
+.extreme {
+  background: linear-gradient(#c4314a 0%, #842da6 100%);
+}
+
+.extreme-border {
+  border: 5px solid #842da6;
+}
+
+.extreme-background {
+  background: #842da6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inner-wrapper {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: orange;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 2px solid green;
+  display: block;
+  margin: 0;
+  color: white;
+  padding: 1%;
+  font-size: 2rem;
+  letter-spacing: 1.6;
+}
+
+h3 {
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.UV-index, .user-UV-index {
+  font-size: 10rem;
+  color: white;
+  font-weight: bold;
+}
+
+.location, .temp-in-c, .weather-condition, .wind-chill, .feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like {
+  font-size: 2rem;
+  color: white;
+}
+
+a.twitter-share-button {
+  display: block;
+  text-decoration: none;
+  background: #1ea1f3;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 5px 10px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1095px) {
+  .main-carousel {
+    margin-bottom: 4%;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .hello input {
+    height: 25px;
+  }
+  #icons {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .wrapper {
+    width: 90%;
+  }
+  #panel-2 label {
+    font-size: 1.5rem;
+  }
+  .hello input {
+    height: 21px;
+    font-size: 1.3rem;
+    padding: 0 5px;
+  }
+  .flickity-page-dots {
+    bottom: 1px;
+  }
+  .user-weather-area p {
+    margin: 2px 0;
+  }
+  .second-half .inner-wrapper {
+    flex-direction: column;
+  }
+  .flex-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  #panel-2 {
+    display: block;
+  }
+  #panel-2 .user-form {
+    flex-direction: row;
+    width: 100%;
+  }
+  .hello {
+    width: 75%;
+  }
+  .right-info-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .user-weather-area, .user-uv-indexes {
+    width: 50%;
+  }
+  .flickity-page-dots {
+    bottom: 20px;
+  }
+  .main-indivators:nth-child(2) {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .user-weather-area {
+    width: 63%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #panel-1 p {
+    font-size: 1.5rem;
+  }
+  .location, .temp-in-c, .weather-condition, .wind-chill, .feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-weather-area p, .user-uv-indexes p {
+    font-size: 1.5rem;
+  }
+  a.twitter-share-button {
+    padding: 5px 3px;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .main-weather-info {
+    width: 75%;
+  }
+  .UV-index, .user-UV-index {
+    font-size: 7.5rem;
+  }
+  .main-uv-index, .main-weather-info {
+    padding: 4%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  a.twitter-share-button {
+    padding: 5px 3px;
+  }
+  .UV-index, .user-UV-index {
+    font-size: 9rem;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+  a.twitter-share-button {
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .carousel-cell {
+    height: 100%;
+  }
+  .carousel-cell label {
+    font-size: 1rem;
+  }
+  .first-flex {
+    flex-direction: column;
+  }
+  .main-weather-info {
+    align-self: right;
+  }
+  .main-uv-index {
+    width: 100%;
+  }
+  .main-uv-index p {
+    text-align: center;
+  }
+  .main-uv-index .UV-index, .main-uv-index .user-UV-index {
+    font-size: 7rem;
+    color: white;
+    font-weight: bold;
+  }
+  .hello input {
+    height: 20px;
+  }
+  #icons {
+    width: 65%;
+  }
+  .location, .temp-in-c, .weather-condition, .wind-chill, .feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-weather-area p, .user-uv-indexes p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .main-indivators:nth-child(2) {
+    width: 59%;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .flickity-page-dots {
+    bottom: 35px;
+  }
+  input[type=radio] {
+    margin: 9px;
+    text-align: center;
+  }
+  .flickity-page-dots {
+    bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-indicators p, #icons p {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .carousel-cell {
+    height: 100%;
+  }
+  .flickity-page-dots {
+    bottom: 10px;
+  }
+  .UV-index, .user-UV-index {
+    font-size: 7rem;
+  }
+  .main-indivators:nth-child(2) {
+    width: 54%;
+  }
+  #index .main-indicators p {
+    margin: 7%;
+  }
+  a.twitter-share-button {
+    font-size: 1rem;
+    padding: 5px 3px;
+    width: 70%;
+  }
+  #icons {
+    width: 61%;
+  }
+  #icons p {
+    text-align: left;
+    margin: 3px 0;
+  }
+  #index .main-indicators p {
+    margin: 7%;
+    margin: 9px 0;
+  }
+}

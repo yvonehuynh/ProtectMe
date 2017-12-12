@@ -1,0 +1,263 @@
+@media only screen and (max-width: 1095px) {
+    // main carousel
+    .main-carousel {
+        margin-bottom: 4%;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .hello input {
+        height: 25px;
+    }
+
+    // second section
+    #icons {
+        width: 67%;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+
+    .wrapper {
+        width: 90%;
+    }
+    #panel-2 {
+        label {
+            font-size: 1.5rem;
+        }
+    }
+
+    .hello input {
+        height: 21px;
+        font-size: 1.3rem;
+        padding: 0 5px
+    }
+
+    .flickity-page-dots {
+        bottom: 1px;
+    }
+
+    .user-weather-area p {
+        margin: 2px 0;
+    }
+    // Second Section Styles
+
+    .second-half {
+        .inner-wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .flex-container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 885px) {
+    // main carousel - 2nd panel
+    #panel-2 {
+        display: block;
+        .user-form {
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+
+    .hello {
+        width: 75%;
+    }
+
+    .right-info-panel {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .user-weather-area , .user-uv-indexes{
+        width: 50%;
+    }
+
+    .flickity-page-dots {
+        bottom: 20px;
+    }
+
+    // second section
+    .main-indivators:nth-child(2) {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    // main carousel
+    .user-weather-area {
+            width: 63%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    // main carousel - 1st panel
+
+    #panel-1 p {
+        font-size: 1.5rem;
+    }
+
+    .location, .temp-in-c, .weather-condition, .wind-chill, .feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-weather-area p, .user-uv-indexes p {
+        font-size: 1.5rem;
+    }
+
+    a.twitter-share-button {
+        padding: 5px 3px;
+    }
+ }
+
+  @media only screen and (max-width: 515px) {
+      //main carousel
+      
+      .main-weather-info {
+          width: 75%;
+      }
+
+      .UV-index, .user-UV-index {
+            font-size: 7.5rem;
+        }
+
+        .main-uv-index, .main-weather-info {
+            padding: 4%;
+        }
+  }
+
+   @media only screen and (max-width: 480px) {
+     // main carousel
+        a.twitter-share-button {
+            padding: 5px 3px;
+        }
+
+        .UV-index, .user-UV-index {
+            font-size: 9rem;
+        }
+   }
+
+ @media only screen and (max-width: 437px) {
+    // main-carousel
+    a.twitter-share-button {
+        width: 79%;
+    }
+ }
+
+ @media only screen and (max-width: 414px) {
+    // main carousel
+    .carousel-cell {
+        height: 100%;
+        label {
+            font-size: 1rem;
+        }
+    }
+
+    .first-flex {
+        flex-direction: column;
+    }
+
+    .main-weather-info {
+        align-self: right;
+    }
+
+ .main-uv-index {
+     width: 100%;
+    p {
+        text-align: center;
+    }
+    .UV-index, .user-UV-index {
+        font-size: 7rem;
+        color: white;
+        font-weight: bold;
+    }
+ }
+
+    .hello input {
+        height: 20px;
+    }
+    // second section
+
+    #icons {
+        width: 65%;
+    }
+
+
+.location, .temp-in-c, .weather-condition, .wind-chill, .feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-location, .user-temp-in-c, .user-weather-condition, .user-wind-chill, .user-feels-like, .user-weather-area p, .user-uv-indexes p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+// second half
+
+ .main-indivators:nth-child(2) {
+    width: 59%;
+}
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .flickity-page-dots {
+        bottom: 35px;
+    }
+
+    input[type=radio] {
+        margin: 9px;
+        text-align: center;
+    }
+
+            .flickity-page-dots {
+            bottom: 10px;
+        }
+ }
+
+ @media only screen and (max-width: 375px) {
+     // second section
+
+            .main-indicators p, #icons p {
+            font-size: 1.7rem;
+        }
+ }
+
+ @media only screen and (max-width: 320px) {
+    // main carousel
+        .carousel-cell {
+        height: 100%;
+    }
+        .flickity-page-dots {
+            bottom: 10px;
+        }
+
+        .UV-index, .user-UV-index {
+            font-size: 7rem;
+        }
+
+     .main-indivators:nth-child(2) {
+        width: 54%;
+    }
+
+    #index .main-indicators p {
+        margin: 7%;
+    }
+
+    a.twitter-share-button {
+        font-size: 1rem;
+        padding: 5px 3px;
+        width: 70%;
+    }
+
+            #icons {
+            width: 61%;
+            p {
+            text-align: left;
+            margin: 3px 0;
+            }
+        }
+
+    #index .main-indicators p {
+        margin: 7%;
+        margin: 9px 0;
+    }
+ }
